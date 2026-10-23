@@ -1,0 +1,14 @@
+# Pinned dependencies for REGENERATING THE SUBMISSION.
+#
+# These are the versions the submitted file was produced and verified with (Python 3.11.0):
+# re-running the documented command under them reproduces it byte for byte.
+#
+# `requirements.txt` is the organisers' evaluator file (deliberately unpinned, numpy + pandas) and
+# is left untouched. This file pins the same two packages and nothing else: the model imports numpy
+# only, and pandas arrives through evaluation/possession_metrics.py, which starter/experiments.py
+# imports for scoring. No other third-party package is needed to regenerate the file -- kloppy,
+# matplotlib, scikit-learn and friends are not used.
+#
+#     pip install -r requirements-submission.txt
+numpy==2.2.6
+pandas==3.0.6
